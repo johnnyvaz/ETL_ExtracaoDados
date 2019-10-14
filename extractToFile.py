@@ -9,7 +9,7 @@ resultado = cursor.fetchall()
 
 arquivo = open('carros.txt', 'w')
 for linha in resultado :
-    arquivo.write(' 1 ')
+    arquivo.write(str(linha))
 
 arquivo.close()
 conexao.close()
